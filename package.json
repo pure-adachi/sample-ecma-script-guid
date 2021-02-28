@@ -1,0 +1,17 @@
+{
+  "name": "sample-ecma-script-guid",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src/**/*.js -o dist/main.js && browserify dist/main.js -o bundle.js",
+    "build:watch": "babel src/**/*.js -o dist/main.js -w | watchify dist/main.js -o bundle.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.1",
+    "@babel/preset-env": "^7.13.0",
+    "browserify": "^17.0.0",
+    "core-js": "^3.9.0",
+    "watchify": "^4.0.0"
+  }
+}
